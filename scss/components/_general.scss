@@ -1,0 +1,43 @@
+@import "../base/variable";
+
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  @extend %margin-padding;
+
+  box-sizing: border-box;
+
+  list-style: none;
+
+  font-family: "Lato", sans-serif;
+
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: nth($colors, 1);
+
+  @media (max-width: 1024px) {
+    font-size: auto;
+
+    letter-spacing: normal;
+
+    line-height: normal;
+  }
+}
+
+body {
+  text-shadow: 0 0 2px #000;
+
+  background-image: $bg-general;
+}
+
+li a {
+  text-decoration: none;
+
+  color: nth($colors, 1);
+}
+
+h2 a {
+  text-decoration: none;
+}

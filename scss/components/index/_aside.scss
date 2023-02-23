@@ -1,0 +1,15 @@
+@import "../../base/mixins";
+
+@import "../../base/variable";
+
+.aside {
+  @include areas(aside);
+
+  @include flex(center, row);
+
+  display: flex;
+
+  flex: 1;
+
+  flex-wrap: wrap;
+}

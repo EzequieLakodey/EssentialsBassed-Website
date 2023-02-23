@@ -1,0 +1,117 @@
+%margin-padding {
+  margin: 0;
+
+  padding: 0;
+}
+
+%responsive-text {
+  font-size: auto;
+
+  letter-spacing: normal;
+
+  line-height: normal;
+}
+
+%flex-centered {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+%flex-end {
+  display: flex;
+
+  align-items: flex-end;
+
+  flex-wrap: wrap;
+}
+
+%navbar-a {
+  margin-right: 5vmax;
+
+  text-transform: uppercase;
+
+  letter-spacing: 5px;
+
+  color: nth($colors, 5);
+}
+
+%img-hover {
+  transform: scale(1.02);
+
+  transition: 3s all;
+
+  border: 0.1em solid rgba($color: #9494947e, $alpha: 1);
+
+  border-radius: 0.1em;
+}
+
+%default-btn {
+  width: 10em;
+
+  height: 2em;
+
+  border-radius: 0.5em;
+
+  color: nth($colors, 2);
+
+  background-color: nth($colors, 3);
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.1em;
+
+  font-size: 1em;
+}
+
+%placeholder {
+  text-transform: uppercase;
+
+  letter-spacing: 0.2em;
+
+  color: nth($colors, 1);
+
+  opacity: 60%;
+}
+
+%label {
+  color: nth($colors, 3);
+
+  font-size: 0.8em;
+
+  margin: 0 0.5em;
+}
+
+%form-anchors {
+  text-decoration: none;
+
+  color: nth($colors, 3);
+
+  font-size: 1em;
+
+  margin: 0.5em 0 0 0;
+}
+
+%form-title {
+  font-family: "Lato", sans-serif;
+
+  font-size: 3em;
+
+  letter-spacing: 0.1em;
+
+  color: nth($colors, 3);
+}
+
+%form-input {
+  color: nth($colors, 1);
+
+  background-color: nth($colors, 2);
+
+  width: 30em;
+
+  margin: 1em 0 1em 0;
+
+  height: 3em;
+}

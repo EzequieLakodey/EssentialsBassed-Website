@@ -1,0 +1,19 @@
+@mixin areas($valor) {
+  grid-area: $valor;
+}
+
+@mixin flex($content, $direction) {
+  justify-content: $content;
+
+  flex-direction: $direction;
+}
+
+@mixin title($size, $transform, $weight, $decor) {
+  font-size: $size;
+
+  text-transform: $transform;
+
+  font-weight: $weight;
+
+  text-decoration: $decor;
+}

@@ -1,0 +1,63 @@
+@import "../../base/mixins";
+
+@import "../../base/variable";
+
+.article {
+  @include areas(article);
+
+  @extend %flex-centered;
+
+  @include flex(center, row);
+
+  border: 5px black dotted;
+
+  article {
+    h2 {
+      margin: 2% 0 0 2%;
+
+      font-size: 1.5em;
+
+      @media (max-width: 1024px) {
+        letter-spacing: 3px;
+      }
+
+      &:hover {
+        border-bottom: 2px solid white;
+
+        letter-spacing: 3px;
+
+        @media (max-width: 1024px) {
+          display: none;
+        }
+      }
+
+      a {
+        color: nth($colors, 3);
+
+        &:hover {
+          transform: scale(1.2);
+
+          transition: all 3s;
+
+          color: nth($colors, 2);
+
+          @media (max-width: 1024px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    em {
+      text-align: justify;
+
+      color: nth($colors, 3);
+
+      font-size: 1.2em;
+
+      margin: 0 3% 2% 3%;
+
+      line-height: 2;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import "../base/variable";
+
+@import "../base/extends";
+
+.grid-container {
+  margin: 0 1%;
+
+  display: grid;
+
+  gap: 1vmax;
+
+  background-image: $bg-general;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-auto-rows: auto;
+
+  grid-template-areas:
+    "nav nav"
+    "image1 image2"
+    "article aside "
+    "contact contact"
+    "footer footer";
+
+  .nav {
+    grid-column: 1/3;
+
+    @include areas(nav);
+  }
+
+  .image1 {
+    @include areas(image1);
+  }
+
+  .image2 {
+    @include areas(image2);
+  }
+
+  .contact {
+    @include areas(contact);
+  }
+
+  .footer {
+    @include areas(footer);
+  }
+
+  .products-container {
+    display: grid;
+
+    grid-template-columns: subgrid;
+
+    grid-template-rows: subgrid;
+
+    grid-column: 1/3;
+  }
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+
+    gap: 3vmax;
+
+    grid-template-columns: auto;
+
+    grid-template-rows: repeat(7, auto);
+
+    grid-template-areas:
+      "nav nav"
+      "image1 image1"
+      "image2 image2"
+      "article article"
+      "aside aside"
+      "contact contact"
+      "footer footer";
+  }
+}

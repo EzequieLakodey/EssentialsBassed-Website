@@ -1,0 +1,19 @@
+{
+  "name": "preentrega2-lakodey",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EzequieLakodey/PreEntrega2-Lakodey.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EzequieLakodey/PreEntrega2-Lakodey/issues"
+  },
+  "homepage": "https://github.com/EzequieLakodey/PreEntrega2-Lakodey#readme",
+  "description": ""
+}

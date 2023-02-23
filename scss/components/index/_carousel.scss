@@ -1,0 +1,33 @@
+@import "../../base/mixins";
+
+.image1 {
+  @include flex(space-around, row);
+
+  display: flex;
+
+  &:hover {
+    @extend %img-hover;
+
+    @media (max-width: 1024px) {
+      transform: none;
+
+      transition: none;
+    }
+  }
+}
+
+.image2 {
+  @include flex(space-around, row);
+
+  display: flex;
+
+  &:hover {
+    @extend %img-hover;
+
+    @media (max-width: 1024px) {
+      transform: none;
+
+      transition: none;
+    }
+  }
+}

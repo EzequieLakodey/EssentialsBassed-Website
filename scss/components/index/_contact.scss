@@ -1,0 +1,126 @@
+@import "../../base/mixins";
+
+@import "../../base/variable";
+
+.contact {
+  @include flex(center, column);
+
+  display: flex;
+
+  letter-spacing: 1vmin;
+
+  .contact-legend {
+    margin-top: 3em;
+
+    p {
+      margin-bottom: 1em;
+    }
+  }
+
+  form {
+    @extend %margin-padding;
+
+    @extend %flex-centered;
+
+    @include flex(center, row);
+
+    width: auto;
+
+    .form {
+      input {
+        @extend %form-input;
+
+        @media (max-width: 1024px) {
+          margin: 1em;
+
+          width: 15em;
+
+          font-size: auto;
+
+          height: 2em;
+        }
+
+        &:hover {
+          animation: contact 120s;
+
+          @media (max-width: 1024px) {
+            animation: none;
+          }
+        }
+        @keyframes contact {
+          0% {
+            text-transform: capitalize;
+
+            font-size: auto;
+
+            transform: scale(1.5);
+
+            border: #fff double 2px;
+
+            letter-spacing: auto;
+          }
+        }
+      }
+      ::placeholder {
+        @extend %placeholder;
+      }
+    }
+  }
+}
+.submit-button {
+  @extend %flex-centered;
+
+  @include flex(center, row);
+
+  margin-top: 1em;
+
+  margin-right: 3%;
+
+  input {
+    @extend %default-btn;
+
+    margin: 1em 0 0 0;
+
+    color: nth($colors, 2);
+
+    @media (max-width: 1024px) {
+      letter-spacing: 5px;
+
+      background-color: nth($colors, 3);
+
+      color: nth($colors, 2);
+
+      height: 2em;
+
+      margin: 1em;
+
+      width: 15em;
+
+      font-weight: bold;
+    }
+
+    &:hover {
+      animation: submit 5s;
+
+      @media (max-width: 1024px) {
+        animation: none;
+      }
+    }
+
+    @keyframes submit {
+      100% {
+        transform: scale(1.5);
+
+        border: nth($colors, 1) double 2px;
+
+        color: nth($colors, 1);
+
+        border-radius: 0.5em;
+
+        letter-spacing: 5px;
+
+        background-color: nth($colors, 2);
+      }
+    }
+  }
+}

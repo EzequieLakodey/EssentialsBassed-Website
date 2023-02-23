@@ -1,0 +1,81 @@
+@import "../../base/mixins";
+
+@import "../../base/variable";
+
+.form {
+  flex: 1;
+
+  justify-content: center;
+
+  .register {
+    input {
+      @media (max-width: 1024px) {
+        height: 3em;
+
+        width: 20em;
+
+        margin: 1em 0;
+
+        padding: 0;
+      }
+    }
+
+    .accounts-btn {
+      @extend %default-btn;
+
+      @media (max-width: 1024px) {
+        width: 10em;
+
+        height: 2em;
+
+        font-size: 1.5em;
+      }
+    }
+
+    div {
+      margin: 0.5em 0 0 0;
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+
+        margin: 1em 0;
+      }
+
+      input {
+        width: auto;
+
+        margin: 0 0.5em 0 0;
+
+        @media (max-width: 1024px) {
+          margin: 0;
+
+          padding: 0;
+        }
+      }
+
+      #terms {
+        @media (max-width: 1024px) {
+          width: 2em;
+
+          margin: 0;
+
+          padding: 0;
+        }
+      }
+
+      #notice {
+        @media (max-width: 1024px) {
+          width: 2em;
+
+          margin: 0;
+
+          padding: 0;
+        }
+      }
+    }
+
+    em {
+      margin: 1em 0 0 0;
+    }
+  }
+}
